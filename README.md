@@ -1,2 +1,5 @@
-code-samples
+Code Samples
 ============
+
+David Cabrera
+david@rerainc.com
