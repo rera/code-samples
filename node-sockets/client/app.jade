@@ -1,0 +1,83 @@
+!!! 5
+html(lang='en')
+	head
+	
+		!= SocketStream
+		
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		
+		script(src='../assets/js/bootstrap.js')
+		script(src='../assets/js/prettify.js')
+		script(src='../assets/js/audiojs/audio.min.js')
+		script(src='../assets/js/toastr.js')
+		script(src='https://js.stripe.com/v1/')
+
+		meta(charset='utf-8')
+		title juke.io : stop, collaborate, and listen
+		meta(name='description', content='')
+		meta(name='author', content='')
+		
+		//if lt IE 9
+			script(src='../assets/js/html5.js')
+			
+		link(href='../assets/css/prettify.css', rel='stylesheet')
+		link(href='../assets/css/bootstrap.css', rel='stylesheet')
+		link(href='../assets/css/toastr.css', rel='stylesheet')
+		link(href='../assets/css/toastr-responsive.css', rel='stylesheet')
+		
+		link(rel='shortcut icon', href='images/favicon.ico')
+		link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+
+	body.body
+		input#event(type='hidden', value='demo')
+			
+		button#feedback.btn.btn-large.btn-info(type="button", onclick="javascript:UserVoice.showPopupWidget();") feedback
+		
+				
+		p.credit powered by
+			br
+			img(src='http://www.grooveshark.com/webincludes/logo/Grooveshark_Logo_Horizontal.png',width="160")
+		
+		.top.row-fluid
+		
+			h1 
+				span JUKE
+				span.note &#9835;
+				span IO	
+				
+			p.instructions
+				span text #demo and a song name to 
+				span.strong.phone +1-817-60-MUSIC 
+				
+
+		.bottom.row-fluid
+			#player
+				audio
+				
+				ul#tracks.row-fluid
+				
+			h4.description Stop, collaborate, & listen. 
+			p.description 
+				span Throwing a party or event? Juke will let your guests text in their song requests. 
+				span Sign up below to keep in touch.
+				
+		
+		div#mc_embed_signup
+			form#mc-embedded-subscribe-form.validate(action="http://rerainc.us5.list-manage.com/subscribe/post?u=143c29e49d4b6d6d5ebe4a246&amp;id=8831811329", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+				div.emailForm
+					input#mce-EMAIL.email.required(type="text", name="EMAIL", placeholder="Enter your email address")
+					&nbsp;
+					input#mc-embedded-subscribe.button.btn.btn-info(type="submit", name="subscribe") Sign Up
+				div#mce-responses.clear
+					div#mce-error-response.response(style="display:none")
+					div#mce-success-response.response(style="display:none")
+					
+		.container.row-fluid
+			footer
+				//p © Rera Inc. 2012
+		
+		div#stripe
+    
+		
