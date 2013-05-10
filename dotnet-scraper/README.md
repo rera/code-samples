@@ -8,3 +8,4 @@ WCF data service built with .NET using POCOs and HtmlAgilityPack to expose Craig
 * WCF
 * SOAP
 * C#
+* LINQ
