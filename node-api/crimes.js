@@ -1,4 +1,3 @@
-
 var utility = require("../utility.js");
 
 
@@ -19,7 +18,7 @@ exports.index = function(req, res){
 		start = start.replace(/-/g, '/');
 		end = end.replace(/-/g, '/');
 		
-		var url = "http://www.crimemapping.com/GetIncidents.aspx?db=" + start + "+00:00:00&de=" + end + "+23:59:00&ccs=" + types + "&xmin=-8943758.013339777&ymin=3076775.9927826896&xmax=-8891704.397077642&ymax=3101350.4973763404&faid=c5542236-85b6-402e-b598-d6b2e9b5683e";
+		var url = "[***REDACTED***]?db=" + start + "+00:00:00&de=" + end + "+23:59:00&ccs=" + types + "&xmin=-8943758.013339777&ymin=3076775.9927826896&xmax=-8891704.397077642&ymax=3101350.4973763404&faid=c5542236-85b6-402e-b598-d6b2e9b5683e";
 	
 		request(url, function(error, response, body) {
 			var data = JSON.parse( body );
