@@ -1,7 +1,7 @@
 Node Sockets
 ============
 
-Juke.io is an SMS-powered, collaborative playlist for streaming music at parties or events. This is a Node.js app built on Express using SocketStream for realtime syncing. Server code available in this repo includes the session manager that handles client requests. Client side uses SocketStream via jQuery-heavy JS to pull down a track list, and play requested tracks using the Grooveshark API. The UI is built with Jade templates and Stylus, and the DOM is manipulated with Hogan templates (tracks added/removed). 
+Juke.io is an SMS-powered, collaborative playlist for streaming music at parties or events. This is a Node.js app built on Express using SocketStream for realtime syncing. Server code available in this repo includes the session manager that handles client requests. Client side uses SocketStream via jQuery-heavy JS to pull down a track list, and stream requested tracks from the server. The UI is built with Jade templates and Stylus, and the DOM is manipulated with Hogan templates and jQuery (tracks added/removed). 
 
 ##### Server-side behind the scenes:
 
