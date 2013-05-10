@@ -13,7 +13,7 @@ Juke.io is an SMS-powered, collaborative playlist for streaming music at parties
 6. Pulls audio down using Grooveshark API 
 7. Streams audio to client through sockets
 
-_*code for these steps not published in this repo_ 
+_*most server-side code not published in this repo_ 
 
 [View it live](http://responsive.is/juke.io) using responsive.is.
 
