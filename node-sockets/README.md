@@ -20,7 +20,7 @@ Portfolio Template
 
 SMS-powered, collaborative playlist for streaming music at parties or events. This is a Node.js app built on Express using SocketStream for realtime syncing. 
 
-On the server side:  
+On the server side:
 1. Receives SMS texts via the Twilio API
 2. Parses into a hashtag event name and an artist/track name 
 3. Gets a Grooveshark song id using their TinySong API
