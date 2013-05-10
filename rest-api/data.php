@@ -28,33 +28,6 @@
 	if(empty($error)) {
 		//no errors, switch object
 		switch($object) {
-			case 'offer':
-				switch($action) {
-					case 'email':
-						try {
-							$message = "
-							<p>$_POST[first] $_POST[last] has sent you a message in regards to a service they can volunteer. 
-							Their contact info is:<br />
-							Phone: $_POST[phone]<br />
-							E-mail: $_POST[email]</p>
-							
-							Their Message:
-							$_POST[message]
-							";
-							$subject = "Someone has offered to volunteer services.";
-							
-							$yourEmail = "webmaster@wpb.org";
-							$headers  = "MIME-Version: 1.0\r\n";
-							$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-							
-							mail($yourEmail, $subject, $message, $headers);
-						}
-						catch(Exception $exception) {
-							$error[] = 'Error: '.$exception->getMessage();
-						}
-						break;
-				}
-				break;
 			case 'opportunity':
 				switch($action) {
 					case 'get':
@@ -210,20 +183,7 @@
 								));
 								$yourEmail = $stm->fetchColumn();
 								
-								$message = "
-								<p>$_POST[first] $_POST[last] has inquired about the following volunteer opportunity:<br/>
-								$_POST[opportunity_title]<br/><br/>
-								Their contact info is:<br />
-								Phone: $_POST[phone]<br />
-								E-mail: $_POST[email]<br />
-								Expertise: $_POST[exp]</p>";
-								$subject = "Volunteer Inquiry: $_POST[opportunity_title]";
-								
-								$headers  = "MIME-Version: 1.0\r\n";
-								$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-								$headers .= "Reply-To: ".$_POST['email']."\r\n";
-								
-								mail($yourEmail.', webmaster@wpb.org', $subject, $message, $headers);
+								// [***REDACTED***]
 							}
 							
 							$rows = array();
