@@ -10,6 +10,8 @@ Juke.io is an SMS-powered, collaborative playlist for streaming music at parties
 3. Gets a Grooveshark song id using their TinySong API
 4. Gets album art and track details using the Last.fm API
 5. Publishes to a mongodb store for syncing
+6. Pulls audio down using Grooveshark API 
+7. Streams audio to client through sockets
 
 _*code for these steps not published in this repo_ 
 
