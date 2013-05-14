@@ -1,7 +1,7 @@
 (function( $ ){
-    var methods = {
-        init : function(options) {
-        	var search = $('<input type="text" name="search"' + ( (options.hasOwnProperty('searchclass') && typeof options.searchclass === 'string') ? ' class="'+options.searchclass+'"' : '' ) + ' placeholder="Search" value="" />');
+	var methods = {
+		init : function(options) {
+			var search = $('<input type="text" name="search"' + ( (options.hasOwnProperty('searchclass') && typeof options.searchclass === 'string') ? ' class="'+options.searchclass+'"' : '' ) + ' placeholder="Search" value="" />');
 			$(search).insertBefore(this);
 			$(search).change(function() {
 				$(this).next().find('li').css("display", "none").each(function() {
