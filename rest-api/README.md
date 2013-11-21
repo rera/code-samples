@@ -1,7 +1,7 @@
-REST API
+HTTP API
 ============
 
-This is a REST(ish) API built the old-fashioned way. No fancy frameworks, just PDO, MySQL, and glorious JSON.
+This is a HTTP API built the old-fashioned way. No fancy frameworks, just PDO, MySQL, and glorious JSON.
 
 [View the site](http://wpb.org/volunteer/) which relies on this API.
 
